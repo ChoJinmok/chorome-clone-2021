@@ -13,7 +13,6 @@ function saveToDos() {
 function deleteToDo(event) {
     const parent = event.target.parentElement;
     parent.remove();
-    localStorage.removeItem(TODOS_KEY,)
 }
 
 function paintToDo(newTodo) {
@@ -30,8 +29,12 @@ function handleToDoSubmit(event) {
     event.preventDefault();
     const newTodo = toDoInput.value;
     toDoInput.value = "";
-    toDos.push(newTodo);
-    paintToDo(newTodo);
+    const newTodoObj = {
+        id: Date.now(),
+        text: newTodo
+    }
+    toDos.push(newTodoObj);
+    paintToDo(newTodoObj);
     saveToDos();
 }
 
@@ -39,7 +42,7 @@ toDoForm.addEventListener("submit", handleToDoSubmit);
 
 const savedToDos = JSON.parse(localStorage.getItem(TODOS_KEY));
 
-if (saveToDos) {
+if (savedToDos) {
     toDos = savedToDos;
-    savedToDos.forEach((item) => paintToDo(item));
+    savedToDos.forEach(paintToDo);
 }
