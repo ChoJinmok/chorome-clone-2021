@@ -35,18 +35,18 @@ input::placeholder {
 }
 
 #login-form input {
-  font-size: 2.5vmin;
+  font-size: 5vmin;
   margin-bottom: 4vh;
 }
 
 #greeting {
-  font-size: 2.5vmin;
+  font-size: 5vmin;
   color: white;
   margin: 0 0 4vh 0;
 }
 
 #todo-form input {
-  font-size: 1.5vmin;
+  font-size: 3vmin;
   padding-right: 4vw;
   font-weight: 800;
 }
@@ -58,7 +58,7 @@ input::placeholder {
   flex-direction: column;
   color: white;
   position: absolute;
-  top: 20vh;
+  top: 10vh;
   left: 50%;
   transform: translate(-49%);
   text-align: center;
@@ -66,17 +66,17 @@ input::placeholder {
 }
 
 #quote span:first-child {
-  font-size: 2vmin;
+  font-size: 4vmin;
   margin-bottom: 1vh;
 }
 
 #quote span:last-child {
-  font-size: 1.5vmin;
+  font-size: 3vmin;
 }
 
 #weather {
   color: white;
-  font-size: 1vmin;
+  font-size: 2vmin;
   position: fixed;
   right: 50px;
   top: 20px;
@@ -86,6 +86,7 @@ input::placeholder {
   color: white;
   list-style: none;
   padding: 0;
+  font-size: 4vmin;
 }
 
 #todo-list button {
@@ -97,4 +98,5 @@ input::placeholder {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  align-items: center;
 }
