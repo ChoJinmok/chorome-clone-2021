@@ -50,4 +50,4 @@ const quotesSelector = Math.floor(Math.random()*quotesCount);
 const todaysQuote = quotes[quotesSelector];
 
 quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+author.innerText = `-${todaysQuote.author}-`;
