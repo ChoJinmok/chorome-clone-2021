@@ -42,11 +42,13 @@ input::placeholder {
 #greeting {
   font-size: 2.5vmin;
   color: white;
+  margin: 0 0 4vh 0;
 }
 
 #todo-form input {
   font-size: 1.5vmin;
   padding-right: 4vw;
+  font-weight: 800;
 }
 
 #quote {
@@ -55,10 +57,10 @@ input::placeholder {
   justify-content: center;
   flex-direction: column;
   color: white;
-  position: fixed;
+  position: absolute;
   top: 20vh;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-49%);
   text-align: center;
   width: fit-content;
 }
@@ -78,4 +80,21 @@ input::placeholder {
   position: fixed;
   right: 50px;
   top: 20px;
+}
+
+#todo-list {
+  color: white;
+  list-style: none;
+  padding: 0;
+}
+
+#todo-list button {
+  background-color: unset;
+  border: none;
+}
+
+#todo-list li {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
